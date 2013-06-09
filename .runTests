@@ -10,7 +10,7 @@ for (( var=1; ; var++ )); do
 		
 		./a.out < .test$var.in > .fisout
 		
-		echo '                               Test '$var':        OK'
+		echo '                               Test '$var': '
 		if diff -q .fisout .test$var.out > /dev/null ; then	
 			echo '                                            OK'
 		else
