@@ -1,0 +1,17 @@
+#/bin/bash
+
+echo "Enter the name of the round: "
+read line
+
+mkdir $line
+git clone https://github.com/vladtarniceru/codeforces $line
+
+cd $line
+rm -r -f new
+
+for var in {A..E}; do
+	cp sample.cpp $var.cpp
+done
+
+
+
