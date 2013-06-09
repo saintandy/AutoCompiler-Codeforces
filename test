@@ -1,6 +1,6 @@
 #/bin/bash
 
-
+clear
 rm *.in
 rm *.out
 
@@ -9,8 +9,6 @@ read round
 read problem
 
 g++ -std=c++11 $problem.cpp
-
-echo $round' '$problem'1'
 
 wget http://codeforces.com/contest/$round/problem/$problem
 
