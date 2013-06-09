@@ -1,0 +1,9 @@
+#/bin/bash
+
+echo "Enter round id: "
+read round
+for var in {A..E}; do
+	firefox codeforces.com/contest/$round/problem/$var
+done
+
+
