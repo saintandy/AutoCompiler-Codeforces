@@ -11,5 +11,5 @@
 		- to run the tests write "./test" , then enter the round id and the problem name (from 'A' to 'E')
 	
 	
-	If you find, report any bugs at "vladtarniceru@gmail.com"
+	If you find, report any bugs at "vladtarniceru@yahoo.com"
 
