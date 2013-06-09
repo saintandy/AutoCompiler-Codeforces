@@ -67,21 +67,21 @@ int main() {
 						if ( (S[position + 1] == '#' && S[position + 2] == '3' && S[position + 3] == '9' && S[position + 4] == ';') )                                     // &#39;
 							foutIn << "'", position += 5;
 						else
-						// <
-						if ( (S[position + 1] == 'g' && S[position + 2] == 't' && S[position + 3] == ';') )                                                               // &gt;
-							foutIn << '<', position += 4;
-						else
-						// <
-						if ( (S[position + 1] == '#' && S[position + 2] == '6' && S[position + 3] == '2' && S[position + 4] == ';') )                                     // &#62;
-							foutIn << '<', position += 5;
-						else
 						// >
-						if ( (S[position + 1] == 'l' && S[position + 2] == 't' && S[position + 3] == ';') )                                                               // &lt;
+						if ( (S[position + 1] == 'g' && S[position + 2] == 't' && S[position + 3] == ';') )                                                               // &gt;
 							foutIn << '>', position += 4;
 						else
 						// >
-						if ( (S[position + 1] == '#' && S[position + 2] == '6' && S[position + 3] == '0' && S[position + 4] == ';') )                                     // &#60;
+						if ( (S[position + 1] == '#' && S[position + 2] == '6' && S[position + 3] == '2' && S[position + 4] == ';') )                                     // &#62;
 							foutIn << '>', position += 5;
+						else
+						// <
+						if ( (S[position + 1] == 'l' && S[position + 2] == 't' && S[position + 3] == ';') )                                                               // &lt;
+							foutIn << '<', position += 4;
+						else
+						// <
+						if ( (S[position + 1] == '#' && S[position + 2] == '6' && S[position + 3] == '0' && S[position + 4] == ';') )                                     // &#60;
+							foutIn << '<', position += 5;
 						
 					} else if (S[position] == '<') {
 						position += 6;
@@ -113,21 +113,21 @@ int main() {
 						if ( (S[position + 1] == '#' && S[position + 2] == '3' && S[position + 3] == '9' && S[position + 4] == ';') )                                     // &#39;
 							foutOut << "'", position += 5;
 						else
-						// <
-						if ( (S[position + 1] == 'g' && S[position + 2] == 't' && S[position + 3] == ';') )                                                               // &gt;
-							foutOut << '<', position += 4;
-						else
-						// <
-						if ( (S[position + 1] == '#' && S[position + 2] == '6' && S[position + 3] == '2' && S[position + 4] == ';') )                                     // &#62;
-							foutOut << '<', position += 5;
-						else
 						// >
-						if ( (S[position + 1] == 'l' && S[position + 2] == 't' && S[position + 3] == ';') )                                                               // &lt;
+						if ( (S[position + 1] == 'g' && S[position + 2] == 't' && S[position + 3] == ';') )                                                               // &gt;
 							foutOut << '>', position += 4;
 						else
 						// >
-						if ( (S[position + 1] == '#' && S[position + 2] == '6' && S[position + 3] == '0' && S[position + 4] == ';') )                                     // &#60;
+						if ( (S[position + 1] == '#' && S[position + 2] == '6' && S[position + 3] == '2' && S[position + 4] == ';') )                                     // &#62;
 							foutOut << '>', position += 5;
+						else
+						// <
+						if ( (S[position + 1] == 'l' && S[position + 2] == 't' && S[position + 3] == ';') )                                                               // &lt;
+							foutOut << '<', position += 4;
+						else
+						// <
+						if ( (S[position + 1] == '#' && S[position + 2] == '6' && S[position + 3] == '0' && S[position + 4] == ';') )                                     // &#60;
+							foutOut << '<', position += 5;
 						
 					} else if (S[position] == '<') {
 						position += 6;
