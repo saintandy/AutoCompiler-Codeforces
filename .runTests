@@ -7,16 +7,16 @@ echo ' '
 echo ' '
 for (( var=1; ; var++ )); do
 	if [[ -a .test$var.in ]]; then
-		
+			
+		echo '                               Test '$var': '
 		./a.out < .test$var.in > .fisout
 		
-		echo '                               Test '$var': '
 		if diff -q .fisout .test$var.out > /dev/null ; then	
-			echo '                                            OK'
+			echo '                                 OK'
 		else
-			echo '                                            WA'
+			echo '                                 WA'
 		fi
-
+		echo ' '
 	else
 		break;
 	fi	
