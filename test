@@ -1,0 +1,26 @@
+#/bin/bash
+
+clear
+rm *.in
+rm *.out
+
+echo "Please enter the name of the round and the name of the problem (example: 314 E)";
+read round
+read problem
+
+g++ -std=c++11 $problem.cpp
+
+wget http://codeforces.com/contest/$round/problem/$problem
+
+clear
+mv $problem .nameIn
+
+echo ' '
+echo ' '
+./.getInput
+./.runTests
+echo ' '
+echo ' '
+echo ' '
+
+
