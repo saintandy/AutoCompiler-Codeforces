@@ -1,0 +1,28 @@
+#/bin/bash
+
+clear
+
+echo ' '
+echo ' '
+echo ' '
+for (( var=1; ; var++ )); do
+	if [[ -a .test$var.in ]]; then
+		
+		./a.out < .test$var.in > .fisout
+		
+		echo '                               Test '$var':        OK'
+		if diff -q .fisout .test$var.out > /dev/null ; then	
+			echo '                                            OK'
+		else
+			echo '                                            WA'
+		fi
+
+	else
+		break;
+	fi	
+done
+
+
+echo ' '
+echo ' '
+echo ' '
