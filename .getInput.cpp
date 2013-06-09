@@ -48,7 +48,42 @@ int main() {
 				cout << '\n';*/
 				
 				while (true) {
-					if (S[position] == '<') {
+					if (S[position] == '&') {
+						
+						// &
+						if ( (S[position + 1] == 'a' && S[position + 2] == 'm' && S[position + 3] == 'p' && S[position + 4] == ';') ||                                    // &amp;
+							 (S[position + 1] == '#' && S[position + 2] == '3' && S[position + 3] == '8' && S[position + 4] == ';') )                                     // &#38;
+							foutIn << '&', position += 5;
+						else
+						// "
+						if ( (S[position + 1] == 'q' && S[position + 2] == 'u' && S[position + 3] == 'o' && S[position + 4] == 't' && S[position + 5] == ';') )           // &quot;
+							foutIn << '"', position += 6;
+						else
+						// "
+						if ( (S[position + 1] == '#' && S[position + 2] == '3' && S[position + 3] == '4' && S[position + 4] == ';') )                                     // &#34;
+							foutIn << '"', position += 5;
+						else
+						// '
+						if ( (S[position + 1] == '#' && S[position + 2] == '3' && S[position + 3] == '9' && S[position + 4] == ';') )                                     // &#39;
+							foutIn << "'", position += 5;
+						else
+						// <
+						if ( (S[position + 1] == 'g' && S[position + 2] == 't' && S[position + 3] == ';') )                                                               // &gt;
+							foutIn << '<', position += 4;
+						else
+						// <
+						if ( (S[position + 1] == '#' && S[position + 2] == '6' && S[position + 3] == '2' && S[position + 4] == ';') )                                     // &#62;
+							foutIn << '<', position += 5;
+						else
+						// >
+						if ( (S[position + 1] == 'l' && S[position + 2] == 't' && S[position + 3] == ';') )                                                               // &lt;
+							foutIn << '>', position += 4;
+						else
+						// >
+						if ( (S[position + 1] == '#' && S[position + 2] == '6' && S[position + 3] == '0' && S[position + 4] == ';') )                                     // &#60;
+							foutIn << '>', position += 5;
+						
+					} else if (S[position] == '<') {
 						position += 6;
 						foutIn << '\n';
 						if (S[position] == '<') break;
@@ -59,7 +94,42 @@ int main() {
 				getNextMatch(position, S, "Output");
 				position += 17;
 				while (true) {
-					if (S[position] == '<') {
+					if (S[position] == '&') {
+						
+						// &
+						if ( (S[position + 1] == 'a' && S[position + 2] == 'm' && S[position + 3] == 'p' && S[position + 4] == ';') ||                                    // &amp;
+							 (S[position + 1] == '#' && S[position + 2] == '3' && S[position + 3] == '8' && S[position + 4] == ';') )                                     // &#38;
+							foutOut << '&', position += 5;
+						else
+						// "
+						if ( (S[position + 1] == 'q' && S[position + 2] == 'u' && S[position + 3] == 'o' && S[position + 4] == 't' && S[position + 5] == ';') )           // &quot;
+							foutOut << '"', position += 6;
+						else
+						// "
+						if ( (S[position + 1] == '#' && S[position + 2] == '3' && S[position + 3] == '4' && S[position + 4] == ';') )                                     // &#34;
+							foutOut << '"', position += 5;
+						else
+						// '
+						if ( (S[position + 1] == '#' && S[position + 2] == '3' && S[position + 3] == '9' && S[position + 4] == ';') )                                     // &#39;
+							foutOut << "'", position += 5;
+						else
+						// <
+						if ( (S[position + 1] == 'g' && S[position + 2] == 't' && S[position + 3] == ';') )                                                               // &gt;
+							foutOut << '<', position += 4;
+						else
+						// <
+						if ( (S[position + 1] == '#' && S[position + 2] == '6' && S[position + 3] == '2' && S[position + 4] == ';') )                                     // &#62;
+							foutOut << '<', position += 5;
+						else
+						// >
+						if ( (S[position + 1] == 'l' && S[position + 2] == 't' && S[position + 3] == ';') )                                                               // &lt;
+							foutOut << '>', position += 4;
+						else
+						// >
+						if ( (S[position + 1] == '#' && S[position + 2] == '6' && S[position + 3] == '0' && S[position + 4] == ';') )                                     // &#60;
+							foutOut << '>', position += 5;
+						
+					} else if (S[position] == '<') {
 						position += 6;
 						foutOut << '\n';
 						if (S[position] == '<') break;
