@@ -8,7 +8,9 @@
 			- copy "new" file in your folder, then "chmod +x new".
 		- to create a new round write in your terminal "./new" , then "cd new"
 		- to open all the problems from a round write "./link" and tell the round id
-		- to run the tests write "./test" , then enter the round id and the problem name (from 'A' to 'E') - you should find them in the problem link
+		- to run the tests write "./test" , then enter the round id and the problem name (from 'A' to 'E'):
+			- you should find them in the problem link
+			- example, for "http://codeforces.com/problemset/problem/314/D", round id is 314 and the problem is D
 	
 	If you find, report any bugs at "vladtarniceru@yahoo.com"
 	
