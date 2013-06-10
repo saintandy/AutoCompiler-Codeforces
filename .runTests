@@ -7,25 +7,23 @@ echo ' '
 for (( var=1; ; var++ )); do
 	if [[ -a .test$var.in ]]; then
 		
-		echo '-------------------------------------------------------------------------------------------'
-		echo '          Test '$var': '
+		echo '---------------------------------------------------------------------------'
 		./a.out < .test$var.in > .fisout
-		
-		echo 'Input, Output, Your Output'
 		echo ' '
-		echo '----------------------------Input------------------------------'
+		echo ' '
+		echo '---------------------------Input-----------------------------'
 		cat .test$var.in	
-		echo '----------------------------Output-----------------------------'
+		echo '---------------------------Output------------------------------'
 		cat .test$var.out
 		echo '-------------------------Your Output---------------------------'
 		cat .fisout
 		echo '---------------------------------------------------------------'
 		
 		if diff -q .fisout .test$var.out > /dev/null ; then	
-			echo '               Status:   OK !                                           YES !'
+			echo '               Status:   OK !                                      YES !'
 			res[$((var))]='OK !'
 		else
-			echo '               Status:   WA !                                           NO !'
+			echo '               Status:   WA !                                      NO !'
 			res[$((var))]='WA !'
 		fi
 		echo ' '
@@ -36,7 +34,7 @@ for (( var=1; ; var++ )); do
 	fi	
 done
 
-echo '-------------------------------------------------------------------------------------------'
+echo '---------------------------------------------------------------------------'
 echo ' '
 echo ' '
 echo '     Result:'
@@ -44,6 +42,10 @@ for (( foo=1; $foo<$var; foo++ )); do
 	echo '       '${res[$((foo))]};
 done
 
+rm -r -f .*.in
+rm -r -f .*.out
+rm -r -f .fisout
+rm -r -f .nameIn
 
 echo ' '
 echo ' '
