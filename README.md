@@ -8,8 +8,12 @@
 			- copy "new" file in your folder, then "chmod +x new".
 		- to create a new round write in your terminal "./new" , then "cd new"
 		- to open all the problems from a round write "./link" and tell the round id
-		- to run the tests write "./test" , then enter the round id and the problem name (from 'A' to 'E')
-	
+		- to run the tests write "./test" , then enter the round id and the problem name (from 'A' to 'E') - you should find them in the problem link
 	
 	If you find, report any bugs at "vladtarniceru@yahoo.com"
+	
+	Note that you will have to print an empty line in the output.
+	For example, if you have to print one number, you should do
+		cout << NUMBER << "\n";
+
 
