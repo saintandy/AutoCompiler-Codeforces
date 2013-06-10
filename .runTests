@@ -7,19 +7,42 @@ echo ' '
 echo ' '
 for (( var=1; ; var++ )); do
 	if [[ -a .test$var.in ]]; then
-			
-		echo '                               Test '$var': '
+		
+		echo '-------------------------------------------------------------------------------------------'
+		echo '          Test '$var': '
 		./a.out < .test$var.in > .fisout
 		
+		echo 'Input, Output, Your Output'
+		echo ' '
+		echo '----------------------------Input------------------------------'
+		cat .test$var.in	
+		echo '----------------------------Output-----------------------------'
+		cat .test$var.out
+		echo '-------------------------Your Output---------------------------'
+		cat .fisout
+		echo '---------------------------------------------------------------'
+		
 		if diff -q .fisout .test$var.out > /dev/null ; then	
-			echo '                                 OK'
+			echo '               Status:   OK !                                           YES !'
+			res[$((var))]='OK !'
 		else
-			echo '                                 WA'
+			echo '               Status:   WA !                                           NO !'
+			res[$((var))]='WA !'
 		fi
 		echo ' '
+		echo ' '
+
 	else
 		break;
 	fi	
+done
+
+echo '-------------------------------------------------------------------------------------------'
+echo ' '
+echo ' '
+echo '     Result:'
+for (( foo=1; $foo<$var; foo++ )); do
+	echo '       '${res[$((foo))]};
 done
 
 
