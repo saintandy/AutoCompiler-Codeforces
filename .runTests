@@ -4,7 +4,6 @@ clear
 
 echo ' '
 echo ' '
-echo ' '
 for (( var=1; ; var++ )); do
 	if [[ -a .test$var.in ]]; then
 		
@@ -49,3 +48,4 @@ done
 echo ' '
 echo ' '
 echo ' '
+
