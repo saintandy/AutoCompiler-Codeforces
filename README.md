@@ -12,7 +12,7 @@
 			- you should find them in the problem link
 			- example, for "http://codeforces.com/problemset/problem/314/D", round id is 314 and the problem is D
 	
-	If you find, report any bugs at "vladtarniceru@yahoo.com"
+	If you find, report any bugs at "vladtarniceru@gmail.com"
 	
 	Note that you will have to print an empty line in the output.
 	For example, if you have to print one number, you should do
