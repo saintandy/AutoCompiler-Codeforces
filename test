@@ -3,7 +3,13 @@
 clear
 
 read round < .roundName
-problem=$1
+if [ $1 ] ; then
+	problem=$1
+else
+	echo 'Enter the name of the problem: '
+	read problem
+fi
+
 
 g++ -std=c++11 $problem.cpp
 
