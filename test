@@ -2,10 +2,8 @@
 
 clear
 
-echo 'Please enter the id of the round: '
-read round
-echo 'Please enter the name of the problem: '
-read problem
+round=$1
+problem=$2
 
 g++ -std=c++11 $problem.cpp
 
