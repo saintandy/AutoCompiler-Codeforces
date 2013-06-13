@@ -21,3 +21,10 @@
 		cout << NUMBER << "\n";
 
 
+	Vim support:
+		- you can set a shortcut in your vimrc which runs the "test" file from "%". Everything will work automatically
+		Code:
+			map SHORTCUT :w! <CR> :!./test % <CR>
+			imap SHORTCUT <ESC> :w! <CR> :!./test % <CR>
+
+
