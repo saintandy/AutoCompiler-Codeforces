@@ -10,6 +10,14 @@ else
 	read problem
 fi
 
+# if [[ $problem == *.cpp ]]; then
+#     for foo in {1..4}; do
+#         problem=${problem%?}
+#     done
+# fi
+
+problem="$(echo $problem | head -c 1)"
+
 
 g++ -std=c++11 $problem.cpp
 
