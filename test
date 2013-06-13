@@ -3,8 +3,7 @@
 clear
 
 read round < .roundName
-echo 'Please enter the name of the problem: '
-read problem
+problem=$1
 
 g++ -std=c++11 $problem.cpp
 
