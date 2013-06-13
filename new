@@ -4,7 +4,7 @@ echo "Enter the name of the round: "
 read line
 
 mkdir $line
-git clone https://github.com/vladtarniceru/codeforces $line
+git clone https://github.com/vladtarniceru/AutoCompiler-codeforces $line
 
 cd $line
 rm -r -f new
