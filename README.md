@@ -11,6 +11,8 @@
 		- to run the tests write "./test" , then enter the round id and the problem name (from 'A' to 'E'):
 			- you should find them in the problem link
 			- example, for "http://codeforces.com/problemset/problem/314/D", round id is 314 and the problem is D
+			- UPDATE: now you don't have to enter the name of the round anymore... just enter the name of the problem
+				- you can do this using arguments or the "normal" method
 	
 	If you find, report any bugs at "vladtarniceru@gmail.com"
 	
