@@ -2,8 +2,7 @@
 
 clear
 
-echo 'Please enter the id of the round: '
-read round
+read round < .roundName
 echo 'Please enter the name of the problem: '
 read problem
 

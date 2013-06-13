@@ -8,10 +8,10 @@ git clone https://github.com/vladtarniceru/codeforces $line
 
 cd $line
 rm -r -f new
+echo $line > .roundName 
 
 for var in {A..E}; do
 	cp sample.cpp $var.cpp
 done
-
 
 
