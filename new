@@ -11,6 +11,7 @@ mkdir $line
 git clone https://github.com/vladtarniceru/AutoCompiler-codeforces $line
 
 cd $line
+touch input
 rm -r -f new
 echo $line > .roundName 
 
