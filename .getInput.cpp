@@ -27,8 +27,7 @@ int main() {
 		fin.getline(S, 1000100);
 		if (S[10] == '=' && S[11] == '"' && S[12] == 't' && S[13] == 't') {
 			int position = 0, size = strlen(S);
-			getNextMatch(position, S, "Input"); position++;
-			getNextMatch(position, S, "Input");
+			getNextMatch(position, S, "Input</div><pre>");
 
 			for (int test = 1; position < size; test++) {
 				char testNumber[10]; intToString(test, testNumber);
@@ -91,7 +90,7 @@ int main() {
 						foutIn << S[position++];
 					}
 				}
-				getNextMatch(position, S, "Output");
+				getNextMatch(position, S, "Output</div><pre>");
 				position += 17;
 				while (true) {
 					if (S[position] == '&') {
@@ -138,7 +137,7 @@ int main() {
 					}
 				}
 				foutIn.close(); foutOut.close();
-				getNextMatch(position, S, "Input");
+				getNextMatch(position, S, "Input</div><pre>");
 			}
 			
 			break;
