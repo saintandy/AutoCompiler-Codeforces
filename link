@@ -1,7 +1,12 @@
 #/bin/bash
 
-echo "Enter round id: "
-read round
+if [ $1 ] ; then
+	round=$1
+else
+	echo "Enter round id: "
+	read round
+fi
+
 for var in {A..E}; do
 	firefox codeforces.com/contest/$round/problem/$var
 done
