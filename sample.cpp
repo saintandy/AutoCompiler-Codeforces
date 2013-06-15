@@ -17,13 +17,10 @@
 	using namespace std;
 	
 	
-// defines and typedefs
+// defines
 	#define oo 2100000000
 	#define PI 3.14159265358979323
 	#define eps 0.0000001
-	
-	typedef long double lod;
-	typedef long long lol;
 	
 	
 // debugging
