@@ -1,0 +1,5 @@
+#/bin/bash
+
+for var in {A..E}; do
+	cp sample.cpp $var.cpp
+done
