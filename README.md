@@ -13,7 +13,8 @@
 			- example, for "http://codeforces.com/problemset/problem/314/D", round id is 314 and the problem is D
 			- UPDATE: now you don't have to enter the name of the round anymore... just enter the name of the problem
 				- you can do this using arguments or the "normal" way :)
-	
+		- if you want to use your own sample.cpp , you must move it in the round folder and then type "./reset"
+
 	If you find, report any bugs at "vladtarniceru@gmail.com"
 	
 	Note that you will have to print an empty line in the output.
