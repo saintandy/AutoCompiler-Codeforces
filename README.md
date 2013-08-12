@@ -18,8 +18,12 @@
 ### Vim support: ###
 - you can set a shortcut in your vimrc which runs the `test` file from `%`. Everything will work automatically
 **Code:**
+
   `map SHORTCUT :w! <CR> :!./test % <CR>`
+
   `imap SHORTCUT <ESC> :w! <CR> :!./test % <CR>`
+
+### ###
 
 **UPDATE:**
 - now you do not have to enter the name of the round anymore... just enter the name of the problem
