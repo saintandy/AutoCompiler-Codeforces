@@ -13,7 +13,7 @@
 ### How to run tests: ###
 
 - to run the tests write `./test` , then enter the round id and the problem name (from **A** to **E**):
-- example, for `http://codeforces.com/problemset/problem/314/D`, round id is 314 and the problem is D
+- example, for `http://codeforces.com/problemset/problem/314/D`, round id is **314** and the problem is **D**
 
 ### Vim support: ###
 - you can set a shortcut in your vimrc which runs the `test` file from `%`. Everything will work automatically
