@@ -19,7 +19,7 @@ fi
 problem="$(echo $problem | head -c 1)"
 
 
-g++ -std=c++11 $problem.cpp
+g++ -std=c++0x $problem.cpp
 
 wget http://codeforces.com/contest/$round/problem/$problem
 
