@@ -18,6 +18,7 @@ fi
 
 problem="$(echo $problem | head -c 1)"
 
+rm -rf a.out
 
 g++ -std=c++0x $problem.cpp
 
