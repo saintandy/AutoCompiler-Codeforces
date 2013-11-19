@@ -35,4 +35,5 @@ echo ' '
 echo ' '
 echo ' '
 
+rm -rf a.out
 
