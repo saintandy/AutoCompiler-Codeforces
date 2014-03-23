@@ -1,0 +1,39 @@
+#/bin/bash
+
+clear
+
+read round < .roundName
+if [ $1 ] ; then
+	problem=$1
+else
+	echo 'Enter the name of the problem: '
+	read problem
+fi
+
+# if [[ $problem == *.cpp ]]; then
+#     for foo in {1..4}; do
+#         problem=${problem%?}
+#     done
+# fi
+
+problem="$(echo $problem | head -c 1)"
+
+rm -rf a.out
+
+g++ -DAUTOCOMPILER -std=c++0x $problem.cpp
+
+wget http://codeforces.com/contest/$round/problem/$problem
+
+clear
+mv $problem .nameIn
+
+echo ' '
+echo ' '
+./.getInput
+./.runTests
+echo ' '
+echo ' '
+echo ' '
+
+rm -rf a.out
+
