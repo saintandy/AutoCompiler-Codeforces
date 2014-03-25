@@ -12,8 +12,10 @@ git clone https://github.com/vladtarniceru/AutoCompiler-codeforces $line
 
 cd $line
 touch input
-rm -r -f new
+rm -r -f .new
 echo $line > .roundName 
+
+g++ -std=c++0x -Wall -o .getInput .getInput.cpp
 
 for var in {A..E}; do
 	cp sample.cpp $var.cpp
