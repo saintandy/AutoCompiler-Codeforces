@@ -46,9 +46,7 @@ typedef long long int64;
 
 
 int main() {
-	int a, b;
-	cin >> a >> b;
-	debug(a, ' ', b);
+	
 }
 
 
