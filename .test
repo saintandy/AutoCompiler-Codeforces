@@ -20,7 +20,7 @@ problem="$(echo $problem | head -c 1)"
 
 rm -rf a.out
 
-g++ -DAUTOCOMPILER -std=c++0x $problem.cpp
+g++ -D__AUTOCOMPILER__ -std=c++0x $problem.cpp
 
 wget http://codeforces.com/contest/$round/problem/$problem
 

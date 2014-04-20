@@ -7,22 +7,21 @@
 #include <cstring>
 #include <string>
 #include <vector>
-#include <cmath>
 #include <queue>
 #include <deque>
 #include <map>
 #include <set>
 using namespace std;
 
-#ifdef HOME
-	#ifndef AUTOCOMPILER
+#ifdef __APPLE__
+	#ifndef __AUTOCOMPILER__
 		#define cin fin
 		ifstream fin("input");
 	#endif
 	
 	inline void debug() {
 	}
-	template <typename _type, typename ... type>
+	template <typename _type, typename... type>
 		inline void debug(_type arg, const type&... next) {
 			cout << arg;
 			debug(next...);
@@ -30,7 +29,7 @@ using namespace std;
 #else
 	inline void debug() {
 	}
-	template <typename _type, typename ... type>
+	template <typename _type, typename... type>
 		inline void debug(_type arg, const type&... next) {
 		}
 #endif
@@ -40,14 +39,16 @@ using namespace std;
 #define fi first
 #define se second
 
-typedef long long bint;
+typedef long long int64;
 
 // ---------- TEMPLATE CODE ENDS HERE ----------
 
 
 
 int main() {
-	
+	int a, b;
+	cin >> a >> b;
+	debug(a, ' ', b);
 }
 
 
