@@ -33,7 +33,6 @@ int main() {
 				char testNumber[10]; intToString(test, testNumber);
 				char InFile[100], OutFile[100];
 				memset(InFile, '\0', sizeof(InFile)); memset(OutFile, '\0', sizeof(OutFile));
-				cout << testNumber << '\n';
 				strcat(InFile, ".test"); strcat(InFile, testNumber); strcat(InFile, ".in");
 				strcat(OutFile, ".test"); strcat(OutFile, testNumber); strcat(OutFile, ".out");
 

@@ -1,6 +1,5 @@
 #/bin/bash
 
-clear
 
 read round < .roundName
 if [ $1 ] ; then
@@ -24,16 +23,10 @@ g++ -D__AUTOCOMPILER__ -std=c++0x $problem.cpp
 
 wget http://codeforces.com/contest/$round/problem/$problem
 
-clear
 mv $problem .nameIn
 
-echo ' '
-echo ' '
 ./.getInput
 ./.runTests
-echo ' '
-echo ' '
-echo ' '
 
 rm -rf a.out
 

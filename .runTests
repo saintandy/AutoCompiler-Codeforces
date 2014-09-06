@@ -1,53 +1,47 @@
 #/bin/bash
 
-clear
-
-echo ' '
-echo ' '
+echo 'Run tests:'
 for (( var=1; ; var++ )); do
 	if [[ -a .test$var.in ]]; then
 		
-		echo '---------------------------------------------------------------------------'
+		echo '--------------------------------------------------------------------------------'
+		echo 'Test #'$var':'
 		./a.out < .test$var.in > .fisout
-		echo ' '
-		echo ' '
-		echo '---------------------------Input-------------------------------'
-		cat .test$var.in	
-		echo '---------------------------Output------------------------------'
+		echo 'Input:'
+		cat .test$var.in
+		echo ''
+		echo 'Expected output:'
 		cat .test$var.out
-		echo '-------------------------Your Output---------------------------'
+		echo ''
+		echo 'Execution result:'
 		cat .fisout
-		echo '---------------------------------------------------------------'
 		
 		if diff -q .fisout .test$var.out > /dev/null ; then	
-			echo '               Status:   OK !                                      YES !'
-			res[$((var))]='OK !'
+			echo 'Verdict: OK.'
+			res[$((var))]='OK'
 		else
-			echo '               Status:   WA !                                      NO !'
-			res[$((var))]='WA !'
+			echo 'Verdict: Wrong Answer.'
+			res[$((var))]='Wrong Answer'
 		fi
-		echo ' '
-		echo ' '
 
 	else
 		break;
 	fi	
 done
 
-echo '---------------------------------------------------------------------------'
-echo ' '
-echo ' '
-echo '     Result:'
+echo '--------------------------------------------------------------------------------'
+echo '--------------------------------------------------------------------------------'
+echo 'Test results:'
 for (( foo=1; $foo<$var; foo++ )); do
-	echo '       '${res[$((foo))]};
+	echo 'Test #'$foo$': '${res[$((foo))]};
 done
 
 rm -r -f .*.in
 rm -r -f .*.out
 rm -r -f .fisout
 rm -r -f .nameIn
+echo '--------------------------------------------------------------------------------'
 
-echo ' '
 echo ' '
 echo ' '
 
