@@ -1,7 +1,4 @@
 
-## AutoCompiler for Codeforces
-
-### Vim command:
-!./../cr.sh %
+### AutoCompiler for Codeforces
 
 Use `./../cr.sh X.cpp` to run a problem.
