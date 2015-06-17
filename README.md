@@ -1,5 +1,5 @@
 
 ## AutoCompiler for Codeforces
 
-# Vim command:
+### Vim command:
 !./../cr.sh %
