@@ -1,4 +1,5 @@
 
 ## AutoCompiler for Codeforces
 
-powered by html2text
+# Vim command:
+!./../cr.sh %
