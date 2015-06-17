@@ -13,6 +13,6 @@
 
 `./new.sh 500`
 
-![alt](http://saintandy.github.io/screenshots/autocompiler1.jpg)
+![alt](http://i.imgur.com/Y1fsRJb.png)
 
-![alt](http://saintandy.github.io/screenshots/autocompiler2.jpg)
+![alt](http://i.imgur.com/XV7K9TC.png)
