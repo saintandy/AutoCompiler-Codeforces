@@ -1,9 +1,9 @@
 
 ### AutoCompiler for Codeforces
 
-**Use:**
-
 `pip install html2text`
+
+**Use:**
 
 `./../cr.sh X.cpp` to run a problem.
 
