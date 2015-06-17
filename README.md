@@ -3,6 +3,8 @@
 
 **Use:**
 
+`pip install html2text`
+
 `./../cr.sh X.cpp` to run a problem.
 
 `./new.sh R` to create a new round
