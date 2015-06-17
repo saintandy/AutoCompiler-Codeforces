@@ -5,7 +5,7 @@
 
 **Use:**
 
-`./../cr.sh X.cpp` to run a problem.
+`./../cr.sh X.cpp` to run a problem
 
 `./new.sh R` to create a new round
 
