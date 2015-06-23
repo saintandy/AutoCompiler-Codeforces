@@ -26,7 +26,7 @@ while text.find("<pre>") != -1:
     inputfile = open("input" + str(count), "w")
     writen = html2text.html2text(fileinput)
     writen = writen[0 : len(writen) - 2]
-    inputfile.write(writen)
+    inputfile.write(correct(writen))
     text = text[text.find("</pre>") + 6 : ]
     fileoutput = text[text.find("<pre>") + 5 : text.find("</pre>")]
     outputfile = open("output" + str(count), "w")
