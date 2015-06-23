@@ -15,7 +15,7 @@
 
 `./new.sh 500`
 
-**Ss:**
+**Ss.:**
 
 ![alt](http://i.imgur.com/qgULh9a.png)
 ![alt](http://i.imgur.com/PePNBXD.png)
