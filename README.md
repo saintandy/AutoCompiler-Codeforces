@@ -11,9 +11,9 @@
 
 **E.g.:**
 
-`cd ~/foo/AutoCompiler-Codeforces/500/ ; ./../cr.sh A.cpp`
-
 `./new.sh 500`
+
+`cd ~/foo/AutoCompiler-Codeforces/500/ ; ./../cr.sh A.cpp`
 
 **Ss.:**
 
