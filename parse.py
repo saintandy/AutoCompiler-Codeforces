@@ -19,7 +19,8 @@ def correct(text):
         ref = ref + text[i]
     return ref
 
-text = text[text.find("Sample test(s)") : len(text)]
+text = text[text.find("sample-test") : len(text)]
+text = text[text.find("sample-test") : len(text)]
 count = 1
 while text.find("<pre>") != -1:
     fileinput = text[text.find("<pre>") + 5 : text.find("</pre>")]
@@ -35,3 +36,5 @@ while text.find("<pre>") != -1:
     outputfile.write(correct(writen))
     text = text[text.find("</pre>") + 6 : ]
     count = count + 1
+    inputfile.close()
+    outputfile.close()
